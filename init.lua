@@ -631,10 +631,12 @@ require('lazy').setup({
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
-        -- But for many setups, the LSP (`ts_ls`) will work just fine
-        ts_ls = {},
-        --
         eslint = {},
+
+        ts_ls = {
+          -- Disabling, we're using typescript-tools, couldn't find another way to do this.
+          autostart = false,
+        },
 
         lua_ls = {
           -- cmd = {...},
