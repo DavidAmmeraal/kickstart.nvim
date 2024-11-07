@@ -44,7 +44,7 @@ return {
         on_attach = my_on_attach,
         update_focused_file = { enable = true },
         view = {
-          width = 50,
+          width = 30,
         },
       }
     end,
