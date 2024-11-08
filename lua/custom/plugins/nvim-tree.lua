@@ -42,6 +42,12 @@ return {
     config = function()
       require('nvim-tree').setup {
         on_attach = my_on_attach,
+        filters = {
+          dotfiles = false,
+          exclude = {
+            '.env',
+          },
+        },
         update_focused_file = { enable = true },
         view = {
           width = 30,
